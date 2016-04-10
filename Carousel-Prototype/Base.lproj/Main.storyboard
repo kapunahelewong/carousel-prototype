@@ -86,7 +86,7 @@
             <objects>
                 <viewController id="D9T-Zy-jqB" customClass="LoginViewController" customModule="Carousel_Prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YlC-md-Oz8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="e2l-7Y-j38">
@@ -454,7 +454,7 @@
         <image name="welcome4" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7ha-FB-xi5"/>
         <segue reference="D9u-pp-nf3"/>
+        <segue reference="cQD-Ov-B5U"/>
     </inferredMetricsTieBreakers>
 </document>

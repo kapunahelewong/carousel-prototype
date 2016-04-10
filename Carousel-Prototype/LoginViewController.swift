@@ -89,11 +89,19 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         if emailField.text == "username" && passwordField.text == "password" {
             print("Email and Password Good to Go")
+            let signingIn = UIAlertController(title: "Signing in... ", message: nil, preferredStyle: .Alert)
+            presentViewController(signingIn, animated: true) {
+            }
             delay(2, closure: { () -> () in
+                signingIn.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    print("closed")
+                })
                 self.loginIndicator.stopAnimating()
                 self.loginButton.selected = false
                 self.performSegueWithIdentifier("loginSegue", sender: nil)
+
             })
+
         } else if emailField.text!.isEmpty {
             let alertController = UIAlertController(title: "Email is Required", message: "Please enter your email", preferredStyle: .Alert)
             let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in}
@@ -103,10 +111,14 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 self.loginIndicator.stopAnimating()
                 self.loginButton.selected = false
             })
-            presentViewController(alertController, animated: true) {}
+            presentViewController(alertController, animated: true) {
+            }
         } else if passwordField.text!.isEmpty {
+            print("Password check failed")
             let alertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .Alert)
-            let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in}
+            let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                
+            }
             alertController.addAction(cancelAction)
             
             delay(2, closure: { () -> () in

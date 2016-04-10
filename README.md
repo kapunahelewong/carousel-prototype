@@ -13,8 +13,8 @@ Time spent: `<Number of hours spent>`
 - [x] Sign In.
   - [x] Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
   - [x] User sees an error alert when no email is present or no password is present.
-  - [ ] User sees a loading screen upon tapping the Sign In button.
-  - [ ] ```alertView.dismissWithClickedButtonIndex(0, animated: true)``` dismisses the loading screen with no buttons.
+  - [x] User sees a loading screen upon tapping the Sign In button.
+  - [x] ```alertView.dismissWithClickedButtonIndex(0, animated: true)``` dismisses the loading screen with no buttons.
   - [x] User sees an error alert when entering the wrong email/password combination.
   - [x] User is taken to the tutorial screens upon entering the correct email/password combination.
 - [x] Tutorial Screens.
