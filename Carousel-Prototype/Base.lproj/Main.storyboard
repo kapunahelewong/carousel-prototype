@@ -143,6 +143,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6gB-14-US5">
                                                         <rect key="frame" x="19" y="11" width="285" height="52"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" red="0.88877680277131266" green="0.20320191344110272" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         <connections>
                                                             <action selector="didPressLogin:" destination="D9T-Zy-jqB" eventType="touchUpInside" id="O5Z-SE-hBp"/>
                                                             <segue destination="tVg-In-dw3" kind="modal" identifier="loginSegue" id="cQD-Ov-B5U"/>

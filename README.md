@@ -32,17 +32,17 @@ Time spent: `<Number of hours spent>`
 #### Optional
 
 - [ ] Photo tiles move with scrolling.
-- [ ] Sign In
-  - [ ] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard
+- [x] Sign In
+  - [x] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard
   - [x] On appear, scale the form up and fade it in.
 - [x] Sign Up
   - [x] Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
   - [ ] Tapping the Agree to Terms checkbox selects the checkbox.
   - [ ] Tapping on Terms shows a webview with the terms.
   - [ ] User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
-- [ ] Tutorial Screens.
-  - [ ] User can page between the screens with updated dots.
-  - [ ] Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
+- [x] Tutorial Screens.
+  - [x] User can page between the screens with updated dots.
+  - [x] Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.
 - [ ] Learn more about Carousel.
   - [ ] Show the "Learn more about Carousel" button in the photo timeline.
   - [ ] Tap the X to dismiss the banner.

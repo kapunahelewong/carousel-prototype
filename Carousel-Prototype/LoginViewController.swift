@@ -80,6 +80,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     func keyboardWillHide(notification: NSNotification!) {
         // Move the buttons back down to it's original position
         buttonParentView.frame.origin.y = buttonInitialY
+        loginScrollView.keyboardDismissMode = .OnDrag
     }
     
     @IBAction func didPressLogin(sender: AnyObject) {
@@ -132,6 +133,18 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         else {
             print("got to else in didPressLogin")
+            let alertController = UIAlertController(title: "Username or Password Incorrrect", message: "Please enter your credentials", preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+                
+            }
+            alertController.addAction(cancelAction)
+            
+            delay(2, closure: { () -> () in
+                self.loginIndicator.stopAnimating()
+                self.loginButton.selected = false
+            })
+            presentViewController(alertController, animated: true) {
+            }
         }
         
     }

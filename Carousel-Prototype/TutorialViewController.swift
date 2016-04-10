@@ -43,8 +43,10 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         if swipeDots.currentPage == 3 {
             swipeDots.hidden = true
+            delay(0.5, closure: { () -> () in
+                self.buttonParentView.alpha = 1
+            })
             
-            buttonParentView.alpha = 1
         }
         
         
